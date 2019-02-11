@@ -1,21 +1,21 @@
-print("Bem-vindo ao programa para cálculo de CR\n")
+print("Programa para cálculo de CR CEDERJ UFF\n")
 
 soma = 0.0
 chTotal = 0
 
-ind = 1
-print("Carga horária %d (inorme 0 para encerrar): " % ind, end="")
+regCH = 1
+print("Carga horária %d (informe 0 para encerrar): " % regCH, end="")
 ch = int(input())
 
 while ch != 0:
-    print("Nota final %d: " % ind, end="")
+    print("Nota final %d: " % regCH, end="")
     nota = float(input())
 
     soma += ch * nota
     chTotal += ch
 
-    ind += 1
-    print("\nCarga horaria %d (informe 0 para encerrar): " % ind, end="")
+    regCH += 1
+    print("\nCarga horaria %d (informe 0 para encerrar): " % regCH, end="")
     ch = int(input())
 
 if chTotal != 0:
